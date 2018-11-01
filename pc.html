@@ -1,0 +1,28 @@
+---
+layout: default
+title: Growly - PC Gaming
+meta: all post about pc gaming
+---
+
+{% include nav.html %}
+<main class="main--home">
+  <ul class="posts">
+    {% for post in site.tags["pc"] %}
+    <li class="post">
+      <a class="post__link" href="{{ site.baseurl }}{{ post.url }}">
+        <div>
+          <div class="post__img" style="background-image: url({{ site.baseurl }}/{{ post.pic }})" title="{{ post.imgAlt }}"></div>
+        </div>
+        <div>
+          <h3 class="post__title">
+            {{ post.header }}
+          </h3>
+          <p>
+            {{ post.meta }} <a class="post__link--color" href="{{ site.baseurl }}{{ post.url }}">read more</a>
+          </p>
+        </div>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</main>

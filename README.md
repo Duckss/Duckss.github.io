@@ -1,1 +1,1 @@
-# Duckss.github.io
+# blog

@@ -1,0 +1,2 @@
+Sitemap: https://growlypw.github.io/sitemap.xml
+User-agent: *
